@@ -53,8 +53,6 @@ local function action(msg)
 if msg.text == '/start' then
 api.sendMessage(msg.chat.id, 'Robot is *Started*', true, true,msg.message_id, true,make_menu())
 db:hset('bot:waiting',msg.from.id,'main')
-elseif msg.text == '/creator'
-api.sendMessage(msg.chat.id, كير شدي بدبخت؟😐 فهميدي با حاجي‌ربوت ساخته نشده؟😐 اين ربات توسط @Hacker_Unknown ساخته شده است 😁👌🏻, true, true,msg.message_id, true,make_menu())
 elseif msg.text == '🔲🔳\n🔳🔲' then
 api.sendMessage(msg.chat.id, '*Main Menu:*', true, true,msg.message_id, true,make_menu())
 db:hset('bot:waiting',msg.from.id,'main')
